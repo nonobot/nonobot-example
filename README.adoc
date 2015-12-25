@@ -1,0 +1,21 @@
+== Nonobot example
+
+This example builds a Nonobot fatjar bundling IRC and Slack adapters.
+
+----
+> mvn assembly:single
+  ...
+> java -jar target/nonobot-example-1.0.0-fatjar.jar
+----
+
+To activate the IRC adapter:
+
+----
+export IRC_CHANNELS=#mychannel
+----
+
+To activate The Slack Adapter:
+
+----
+export SLACK_TOKEN=your-slack-token-here
+----
