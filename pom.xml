@@ -52,6 +52,10 @@
 
   <dependencies>
     <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-lang-js</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.nonobot</groupId>
       <artifactId>nonobot-core</artifactId>
       <version>1.0.0</version>
@@ -96,7 +100,7 @@
                 <mainClass>io.vertx.core.Starter</mainClass>
               </manifest>
               <manifestEntries>
-                <Main-Verticle>io.nonobot.core.BotVerticle</Main-Verticle>
+                <Main-Verticle>run.js</Main-Verticle>
               </manifestEntries>
             </archive>
           </configuration>
