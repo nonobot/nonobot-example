@@ -2,6 +2,8 @@
 
 This example builds a Nonobot fatjar bundling IRC and Slack adapters.
 
+=== Adapters
+
 ----
 > mvn assembly:single
   ...
