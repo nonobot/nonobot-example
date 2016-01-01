@@ -1,6 +1,6 @@
-var MessageRouter = require("nonobot-js/message_router.js");
+var Bot = require("nonobot-js/bot.js");
 
-var router = MessageRouter.getShared(vertx);
+var router = Bot.getShared(vertx).chatRouter();
 router.respond("hello", function(message) {
   message.reply("hello sir, how are you doing today?");
 });
